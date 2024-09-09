@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+
+  background-color: hsl(0, 2%, 19%);
+}
+
+/* .background {
+  background: url(assets/images/background-pattern-desktop.svg) no-repeat top
+    center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 41vh;
+  width: 100%;
+  border: none;
+}
+
+.background2 {
+  background-color: hsl(275, 100%, 97%);
+  min-height: 59vh;
+  width: 100%;
+  border: none;
+} */
+
+.container {
+  border: 1px solid #666;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 45px 40px;
+  max-width: 625px;
+  margin: 100px auto;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: larger;
+  margin-bottom: 25px;
+  color: hsl(292, 42%, 14%);
+}
+
+.faq {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid hsl(275, 100%, 97%);
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 0;
+  cursor: pointer;
+  &:hover {
+    color: hsl(292, 16%, 49%);
+  }
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.answer p {
+  color: gray;
+  line-height: 22px;
+}
+
+.faq.active .answer {
+  transition: max-height 0.4s ease;
+}
+
+/* .attribution {
+  font-size: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
