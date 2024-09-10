@@ -9,13 +9,15 @@ body,
 html {
   height: 100%;
   display: flex;
+  width: 100%;
   flex-direction: column;
 }
 
 body {
   font-family: "Work Sans", sans-serif;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
+  min-height: 100vh;
 }
 .background {
   background: url(assets/images/background-pattern-desktop.svg) no-repeat center
@@ -40,13 +42,14 @@ body {
 }
 
 .container {
-  border: 1px solid #666;
+  transform: translateY(30%);
   border-radius: 10px;
   background-color: #ffffff;
   padding: 45px 40px;
   max-width: 655px;
   z-index: 1;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
 }
 
 .title {
@@ -96,27 +99,33 @@ body {
 
 @media (min-width: 1024px) {
   .container {
-    max-width: 710px;
-    margin: 100px auto;
+    max-width: 623px;
+    transform: translateY(17%);
   }
   .title {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .question {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+  .faq {
+    margin-top: 0;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 600px;
-    margin: 100px auto;
+    max-width: 544px;
+    transform: translateY(18%);
   }
   .title {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .question {
-    font-size: 1.4rem;
+    font-size: 1rem;
+  }
+  .faq {
+    margin-top: 0;
   }
 }
 
@@ -124,7 +133,7 @@ body {
   .container {
     max-width: 63%;
     padding: 25px;
-    margin: 100px auto;
+    transform: translateY(13%);
   }
   .title {
     font-size: 1.5rem;
@@ -138,6 +147,7 @@ body {
   .container {
     max-width: 83%;
     padding: 20px;
+    transform: translateY(13%);
   }
 
   .background {
